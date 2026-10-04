@@ -1,0 +1,1048 @@
+/* =====================================
+   MALLORY CRISTIAN — ARTIST PORTFOLIO
+   Dark • Elegant • Fast • Mobile First
+===================================== */
+
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090909;
+    color: #eee9e1;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    width: 100%;
+    padding: 24px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #24211e;
+}
+
+.logo {
+    color: #d2b17c;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+nav a {
+    color: #9a948c;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    transition: color 0.25s ease;
+}
+
+nav a:hover {
+    color: #d2b17c;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+    min-height: 78vh;
+
+    padding: 90px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    right: -100px;
+    top: 100px;
+
+    background: #c9a87c;
+
+    opacity: 0.025;
+
+    filter: blur(90px);
+
+    pointer-events: none;
+}
+
+
+/* LABEL */
+
+.tag {
+    color: #c9a87c;
+
+    font-size: 9px;
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+
+/* NAME */
+
+.hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(55px, 13vw, 110px);
+
+    font-weight: normal;
+
+    line-height: 0.92;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #c9a87c;
+
+    font-style: italic;
+}
+
+
+/* INTRO */
+
+.intro {
+    max-width: 430px;
+
+    color: #8f8a83;
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    margin-bottom: 35px;
+}
+
+
+/* HERO LINKS */
+
+.collection-links {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+.link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 20px;
+
+    border: 1px solid #65523a;
+
+    color: #c9a87c;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.link:hover {
+    background: #c9a87c;
+
+    color: #090909;
+
+    transform: translateY(-2px);
+}
+
+.text-link {
+    color: #77716a;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    transition: color 0.25s ease;
+}
+
+.text-link:hover {
+    color: #c9a87c;
+}
+
+
+/* =====================================
+   COLLECTIONS
+===================================== */
+
+.collections {
+    width: 84%;
+
+    margin: 0 auto;
+
+    padding: 100px 0 110px;
+
+    border-top: 1px solid #24211e;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(38px, 8vw, 65px);
+
+    font-weight: normal;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.section-heading h2 span {
+    color: #c9a87c;
+
+    font-style: italic;
+}
+
+
+/* COLLECTION CARDS */
+
+.collection-card {
+    width: 100%;
+
+    min-height: 150px;
+
+    padding: 32px 30px;
+
+    margin-bottom: 14px;
+
+    border: 1px solid #25221f;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #0d0d0d;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.collection-card:hover {
+    border-color: #5a4934;
+
+    background: #11100f;
+
+    transform: translateX(5px);
+}
+
+.number {
+    color: #68625b;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    display: block;
+
+    margin-bottom: 12px;
+}
+
+.collection-card h3 {
+    font-family: Georgia, serif;
+
+    font-size: 29px;
+
+    font-weight: normal;
+
+    margin-bottom: 7px;
+}
+
+.collection-card p {
+    color: #77716a;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+.arrow {
+    color: #c9a87c;
+
+    font-size: 25px;
+
+    transition: transform 0.3s ease;
+}
+
+.collection-card:hover .arrow {
+    transform: translate(4px, -4px);
+}
+
+
+/* =====================================
+   ABOUT
+===================================== */
+
+.note {
+    width: 84%;
+
+    margin: 0 auto;
+
+    padding: 85px 0;
+
+    border-top: 1px solid #24211e;
+
+    display: grid;
+
+    grid-template-columns: 0.7fr 1.3fr;
+
+    gap: 50px;
+}
+
+.about-label p {
+    color: #c9a87c;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+}
+
+.about-text {
+    max-width: 550px;
+
+    color: #908a82;
+
+    font-family: Georgia, serif;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   SOCIALS
+===================================== */
+
+.social-section {
+    width: 84%;
+
+    margin: 0 auto;
+
+    padding: 90px 0 100px;
+
+    border-top: 1px solid #24211e;
+}
+
+.social-section h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(40px, 9vw, 70px);
+
+    font-weight: normal;
+
+    line-height: 1;
+
+    margin-bottom: 45px;
+}
+
+.social-section h2 span {
+    color: #c9a87c;
+
+    font-style: italic;
+}
+
+.social-links {
+    border-top: 1px solid #25221f;
+}
+
+.social-links a {
+    padding: 20px 5px;
+
+    border-bottom: 1px solid #25221f;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #aaa39a;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    transition:
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+.social-links a:hover {
+    color: #c9a87c;
+
+    padding-left: 10px;
+}
+
+.social-links a span:last-child {
+    color: #c9a87c;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+}
+
+
+/* =====================================
+   GALLERY PAGES
+===================================== */
+
+.gallery-header {
+    padding: 90px 8% 65px;
+}
+
+.gallery-header h1 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(48px, 10vw, 85px);
+
+    font-weight: normal;
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+.gallery-header h1 span {
+    color: #c9a87c;
+
+    font-style: italic;
+}
+
+.gallery-header .intro {
+    max-width: 500px;
+}
+
+
+/* GALLERY */
+
+.gallery {
+    width: 88%;
+    max-width: 1200px;
+
+    margin: 0 auto 120px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 45px 28px;
+
+    align-items: start;
+}
+
+
+/* ARTWORK */
+
+.art-card {
+    position: relative;
+
+    overflow: hidden;
+
+    background: #0e0e0e;
+
+    border: none;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.art-card img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.5s ease;
+}
+
+.art-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.55);
+}
+
+.art-card:hover img {
+    transform: scale(1.035);
+
+    filter: brightness(0.88);
+}
+
+
+/* VIDEOS */
+
+.art-card video {
+    width: 100%;
+
+    display: block;
+
+    background: #050505;
+
+    border: none;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: contain;
+}
+
+.art-card:has(video) {
+    background: #050505;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    padding: 30px 8%;
+
+    border-top: 1px solid #24211e;
+
+    color: #625d56;
+
+    font-size: 9px;
+
+    letter-spacing: 0.5px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.footer-name {
+    color: #c9a87c;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 4px;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    header {
+        padding: 21px 6%;
+    }
+
+    .logo {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 82vh;
+
+        padding: 75px 7% 65px;
+    }
+
+    .hero h1 {
+        font-size: 61px;
+
+        line-height: 0.9;
+
+        letter-spacing: -3px;
+
+        margin-bottom: 28px;
+    }
+
+    .hero::after {
+        width: 180px;
+        height: 180px;
+
+        right: -80px;
+    }
+
+    .intro {
+        font-size: 13px;
+
+        max-width: 340px;
+
+        line-height: 1.9;
+
+        margin-bottom: 32px;
+    }
+
+    .collection-links {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 17px;
+    }
+
+    .link {
+        padding: 15px 21px;
+
+        font-size: 9px;
+    }
+
+    .text-link {
+        font-size: 9px;
+    }
+
+
+    /* COLLECTIONS */
+
+    .collections {
+        width: 88%;
+
+        padding: 65px 0 80px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 43px;
+    }
+
+    .collection-card {
+        min-height: 125px;
+
+        padding: 24px 19px;
+    }
+
+    .collection-card h3 {
+        font-size: 23px;
+    }
+
+    .collection-card p {
+        max-width: 220px;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+    .arrow {
+        font-size: 22px;
+    }
+
+
+    /* ABOUT */
+
+    .note {
+        width: 88%;
+
+        padding: 65px 0;
+
+        display: block;
+    }
+
+    .about-text {
+        margin-top: 25px;
+
+        font-size: 17px;
+
+        line-height: 1.75;
+    }
+
+
+    /* SOCIALS */
+
+    .social-section {
+        width: 88%;
+
+        padding: 65px 0 75px;
+    }
+
+    .social-section h2 {
+        font-size: 43px;
+
+        margin-bottom: 35px;
+    }
+
+    .social-links a {
+        font-size: 18px;
+
+        padding: 18px 3px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-header {
+        padding: 65px 7% 45px;
+    }
+
+    .gallery-header h1 {
+        font-size: 50px;
+    }
+
+    .gallery {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        margin-bottom: 80px;
+    }
+
+    .art-card {
+        box-shadow:
+            0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 6%;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        font-size: 9px;
+    }
+
+}
+/* =====================================
+   FULLSCREEN IMAGE VIEWER
+===================================== */
+
+.image-viewer {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    background: rgba(5, 5, 5, 0.96);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    animation: viewerFade 0.25s ease;
+}
+
+.image-viewer img {
+    max-width: 94%;
+    max-height: 90vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.7);
+}
+
+
+/* CLOSE BUTTON */
+
+.viewer-close {
+    position: fixed;
+
+    top: 20px;
+    right: 22px;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #51483e;
+
+    background: #11100f;
+
+    color: #c9a87c;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+/* ANIMATION */
+
+@keyframes viewerFade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+/* =====================================
+   PREMIUM COLLECTION CARDS
+===================================== */
+
+.collection-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.collection-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 2px;
+    height: 100%;
+
+    background: #c9a87c;
+
+    transform: scaleY(0);
+
+    transform-origin: bottom;
+
+    transition: transform 0.35s ease;
+}
+
+.collection-card:hover::before {
+    transform: scaleY(1);
+}
+
+.collection-card .card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.collection-card .arrow {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .collection-card::before {
+        transform: scaleY(1);
+        opacity: 0.35;
+    }
+
+}
+/* =====================================
+   PREMIUM SOCIAL LINKS
+===================================== */
+
+.social-links a {
+    position: relative;
+
+    min-height: 62px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-bottom: 1px solid #25221f;
+
+    transition:
+        color 0.3s ease,
+        padding-left 0.3s ease,
+        background 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #0e0e0e;
+
+    padding-left: 16px;
+
+    color: #c9a87c;
+}
+
+
+/* GOLD SIDE ACCENT */
+
+.social-links a::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 1px;
+    height: 100%;
+
+    background: #c9a87c;
+
+    transform: scaleY(0);
+
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover::before {
+    transform: scaleY(1);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .social-links a {
+        min-height: 60px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .social-links a:hover {
+        padding-left: 12px;
+    }
+
+}
+/* =====================================
+   FINAL MOBILE POLISH
+===================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        word-break: normal;
+    }
+
+    .collection-card {
+        width: 100%;
+    }
+
+    .collection-card h3 {
+        line-height: 1.2;
+    }
+
+    .gallery-header h1 {
+        word-break: normal;
+    }
+
+    .art-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
