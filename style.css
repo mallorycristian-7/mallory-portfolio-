@@ -1046,3 +1046,12 @@ footer {
     }
 
 }
+/* WEBSITE LOGO */
+
+.site-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 8px;
+}
