@@ -1055,3 +1055,7 @@ footer {
     vertical-align: middle;
     margin-right: 8px;
 }
+.logo {
+    display: flex;
+    align-items: center;
+}
